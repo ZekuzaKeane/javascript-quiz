@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <button id="highScores">View high scores</button>
+        <h2 id="timer"></h2>
+    </header>
+  <main>
+    <div id="startScreen" class="quizSection">
+        <h2>JavaScript Quiz Challenge</h2>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="start">Start</button>
+    </div>
+    <div id="questionOne" class="hidden">
+        <h2>Commonly used data types do NOT include:</h2>
+        <button class="wrong">1. Strings</button>
+        <button class="wrong">2. Booleans</button>
+        <button class="correct">3. Alerts</button>
+        <button class="wrong">4. Numbers</button>
+    </div>
+    <div id="questionTwo" class="hidden">
+        <h2>The condition in an if/else statement is enclosed with _____.</h2>
+        <button class="wrong">1. Quotes</button>
+        <button class="wrong">2. Curly Brackets</button>
+        <button class="correct">3. Parenthesis</button>
+        <button class="wrong">4. Square Brackets</button>
+    </div>
+    <div id="questionThree" class="hidden">
+        <h2>Arrays in JavaScript can be used to store _____.</h2>
+        <button class="wrong">1. Numbers & Strings</button>
+        <button class="wrong">2. Other Arrays</button>
+        <button class="wrong">3. Booleans</button>
+        <button class="correct">4. All of the Above</button>
+    </div>
+    <div id="questionFour" class="hidden">
+        <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
+        <button class="wrong">1. Commas</button>
+        <button class="wrong">2. Curly Brackets</button>
+        <button class="correct">3. Quotes</button>
+        <button class="wrong">4. Parenthesis</button>
+    </div>
+    <div id="questionFive" class="hidden">
+        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        <button class="wrong">1. JavaScript</button>
+        <button class="wrong">2. Terminal/Bash</button>
+        <button class="wrong">3. For Loops</button>
+        <button class="correct">4. console.log</button>
+    </div>
+    <div id="highScore" class="hidden">
+        <h2>All done!</h2>
+        <p id="scoreDisplay">Final Score</p>
+        <input type="text" id="score-input" name="initials" placeholder="Enter Initials" />
+        <button id="submit-score">Submit</button>
+    </div>
+    <div id="leaderBoard" class="hidden">
+        <h2>HIGH SCORES</h2>
+        <ul id="score-list"></ul>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js">
+  </script>
+</body>
+
+</html>
